@@ -101,7 +101,7 @@ class Documentation extends React.Component {
           <DocumentComponent
             title="BarFill"
             component={<BarFill label={"Data"}
-                                color={colors.dataStatusColors.red}
+                                color={colors.dataStatusColors.red.rgb}
                                 currentAmount={22}
                                 totalAmount={100} width="2rem" height="4rem"
 

@@ -13,7 +13,7 @@ class Tabata extends React.Component {
 
     for(let i=0; i < this.props.intervals; i++){
       rounds.push(
-        <div key={i} className="interval">
+        <div key={`t${i}`} className="interval">
           <BarFill
             width="auto"
             height="1rem"

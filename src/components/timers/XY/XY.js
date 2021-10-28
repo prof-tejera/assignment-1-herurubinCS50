@@ -12,7 +12,7 @@ class XY extends React.Component {
 
     for(let i=0; i < this.props.rounds; i++){
       rounds.push(
-        <div key={i}>
+        <div key={`xy${i}`}>
           <BarFill
             width="auto"
             height="1rem"
