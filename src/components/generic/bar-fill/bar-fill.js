@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { colors } from "../color-data/colors";
+import { buttonTypes } from "../button/button";
 
 
 export class BarFill extends React.Component{
@@ -47,7 +48,7 @@ export class BarFill extends React.Component{
 BarFill.propTypes = {
   width : PropTypes.string,
   height : PropTypes.string,
-  color : PropTypes.oneOf(colors.dataStatusColors.red.rgb, colors.dataStatusColors.green.rgb, colors.dataStatusColors.yellow.rgb),
+  color : PropTypes.oneOf( colors.buttonColors.activeFill.rgb, colors.dataStatusColors.red.rgb, colors.dataStatusColors.green.rgb, colors.dataStatusColors.yellow.rgb),
   totalAmount : PropTypes.number,
   currentAmount : PropTypes.number,
   label : PropTypes.string

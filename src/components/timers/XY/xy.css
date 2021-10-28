@@ -1,0 +1,10 @@
+.rounds-display{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rounds-display .bar-fill{
+    flex-grow: 1;
+}

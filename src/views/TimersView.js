@@ -30,7 +30,7 @@ function App() {
   const timers = [
     { title: "Stopwatch", C: <Stopwatch /> },
     { title: "Countdown", C: <Countdown /> },
-    { title: "XY", C: <XY /> },
+    { title: "XY", C: <XY currentRoundTime={[60, 60, 60, 12, 0]} secondsPerRound={[60, 60, 60, 60, 60]} rounds={5} /> },
     { title: "Tabata", C: <Tabata /> },
   ];
 

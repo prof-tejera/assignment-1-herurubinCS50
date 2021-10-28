@@ -9,7 +9,6 @@ class Stopwatch extends React.Component {
   render() {
     return (
 
-
       <div>
         <div>
           <Readout fontSize="3rem" width="250px" hours="00" minutes="04" seconds="32" />
