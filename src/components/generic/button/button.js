@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { GraphicsLibItem, graphicsLib } from "../graphics/graphicsLibItem";
 
 
 export const buttonTypes = {
@@ -19,7 +20,19 @@ export class Button extends React.Component{
         return (<div className="button disabled">{this.props.label}</div>);
 
       case buttonTypes.action:
-        return (<button className="button action">{this.props.label}</button>)
+        return (
+          <button
+            className="button action"
+            style={
+              {
+                width : `${this.props.buttonWidth}`
+              }
+            }
+          >
+            {this.props.label}
+            <GraphicsLibItem width="1.5rem" height="3rem" graphicName={this.props.icon} />
+          </button>
+        )
 
       default:
 
@@ -33,8 +46,12 @@ export class Button extends React.Component{
 }
 
 Button.propTypes = {
+  buttonWidth : PropTypes.string,
   buttonAction : PropTypes.func,
   linkTo : PropTypes.string,
   label : PropTypes.string,
-  buttonType : PropTypes.oneOf([buttonTypes.action, buttonTypes.link, buttonTypes.disabled])
+  buttonType : PropTypes.oneOf([buttonTypes.action, buttonTypes.link, buttonTypes.disabled]),
+  icon : PropTypes.oneOf([graphicsLib.startIcon, graphicsLib.lapIcon]),
+  iconHeight : PropTypes.string,
+  iconWidth : PropTypes.string
 }

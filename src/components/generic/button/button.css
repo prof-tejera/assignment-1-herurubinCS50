@@ -5,7 +5,15 @@
     font-size: 1rem;
     color: #303f5f;
     font-family: ObjectSans;
+    font-weight: 600;
     border: 1px solid #020D24;
+    position: relative;
+}
+
+.button .icon{
+    position: absolute;
+    top: -20px;
+    right: 5px;
 }
 
 .button.action{

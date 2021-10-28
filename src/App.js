@@ -6,6 +6,10 @@ import './App.css'
 
 import './components/generic/bar-fill/bar-fill.css';
 import './components/generic/button/button.css';
+import './components/generic/numerical-readout/readout.css';
+import './components/timers/Stopwatch/stop-watch.css';
+import './components/timers/Countdown/countdown.css';
+import './components/timers/XY/xy.css';
 
 import DocumentationView from "./views/DocumentationView";
 import TimersView from "./views/TimersView";

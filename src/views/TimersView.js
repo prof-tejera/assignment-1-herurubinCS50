@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import Stopwatch from "../components/timers/Stopwatch";
-import Countdown from "../components/timers/Countdown";
-import XY from "../components/timers/XY";
+import Stopwatch from "../components/timers/Stopwatch/Stopwatch";
+import Countdown from "../components/timers/Countdown/Countdown";
+import XY from "../components/timers/XY/XY";
 import Tabata from "../components/timers/Tabata";
 
 const Timers = styled.div`
