@@ -13,13 +13,18 @@ const Timers = styled.div`
 `;
 
 const Timer = styled.div`
-  border: 1px solid gray;
+  
   padding: 20px;
   margin: 10px;
   font-size: 1.5rem;
+  
 `;
 
-const TimerTitle = styled.div``;
+const TimerTitle = styled.div`
+  border-bottom: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 200;
+`;
 
 function App() {
   const timers = [

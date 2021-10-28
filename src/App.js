@@ -2,6 +2,11 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import styled from "styled-components";
 
+import './App.css'
+
+import './components/generic/bar-fill/bar-fill.css';
+import './components/generic/button/button.css';
+
 import DocumentationView from "./views/DocumentationView";
 import TimersView from "./views/TimersView";
 
