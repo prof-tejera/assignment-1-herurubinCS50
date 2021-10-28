@@ -43,10 +43,12 @@ function App() {
   return (
     <Timers>
       {timers.map((timer) => (
-        <Timer>
-          <TimerTitle>{timer.title}</TimerTitle>
-          {timer.C}
-        </Timer>
+        <div key={timer.title}>
+          <Timer>
+            <TimerTitle>{timer.title}</TimerTitle>
+            {timer.C}
+          </Timer>
+        </div>
       ))}
     </Timers>
   );

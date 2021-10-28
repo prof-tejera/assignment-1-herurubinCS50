@@ -6,7 +6,7 @@ import { colors } from "../../generic/color-data/colors";
 
 class XY extends React.Component {
 
-  //these displays would be managed by state for the final working version
+  // these displays would be managed by state for the final working version
   roundTicks(){
     let rounds = [];
 
