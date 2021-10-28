@@ -12,12 +12,14 @@ class XY extends React.Component {
 
     for(let i=0; i < this.props.rounds; i++){
       rounds.push(
-        <BarFill
-          width="auto"
-          height="1rem"
-          color={colors.buttonColors.activeFill.rgb}
-          totalAmount={this.props.secondsPerRound[i]}
-          currentAmount={this.props.currentRoundTime[i]} />)
+        <div key={i}>
+          <BarFill
+            width="auto"
+            height="1rem"
+            color={colors.buttonColors.activeFill.rgb}
+            totalAmount={this.props.secondsPerRound[i]}
+            currentAmount={this.props.currentRoundTime[i]} />
+        </div>)
     }
 
     return rounds;

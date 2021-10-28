@@ -5,6 +5,6 @@
     align-items: center;
 }
 
-.rounds-display .bar-fill{
+.rounds-display div{
     flex-grow: 1;
 }

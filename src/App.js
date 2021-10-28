@@ -10,6 +10,7 @@ import './components/generic/numerical-readout/readout.css';
 import './components/timers/Stopwatch/stop-watch.css';
 import './components/timers/Countdown/countdown.css';
 import './components/timers/XY/xy.css';
+import './components/timers/Tabata/tabata.css'
 
 import DocumentationView from "./views/DocumentationView";
 import TimersView from "./views/TimersView";

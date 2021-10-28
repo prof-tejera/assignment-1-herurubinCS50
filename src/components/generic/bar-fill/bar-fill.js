@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { colors } from "../color-data/colors";
-import { buttonTypes } from "../button/button";
+
 
 
 export class BarFill extends React.Component{
@@ -14,7 +14,7 @@ export class BarFill extends React.Component{
   render(){
 
     return(
-      <div className="bar-fill"
+      <div key={this.props.key} className="bar-fill"
       style={
         {
           width : `${this.props.width}`
@@ -35,7 +35,7 @@ export class BarFill extends React.Component{
               height : `${this.fillLevel()}`,
               width : `100%`,
               background: `linear-gradient(180deg, rgba(${this.props.color},0.75) 0%, rgba(${this.props.color},0.2) 100%)`
-              //background : `linear-gradient(180deg, rgba(${this.props.color},0.75) 0%, rgba(${this.props.color},0) 100%);`
+
             }
           }
               />
@@ -48,7 +48,7 @@ export class BarFill extends React.Component{
 BarFill.propTypes = {
   width : PropTypes.string,
   height : PropTypes.string,
-  color : PropTypes.oneOf( colors.buttonColors.activeFill.rgb, colors.dataStatusColors.red.rgb, colors.dataStatusColors.green.rgb, colors.dataStatusColors.yellow.rgb),
+  color : PropTypes.oneOf( [colors.buttonColors.activeFill.rgb, colors.dataStatusColors.red.rgb, colors.dataStatusColors.green.rgb, colors.dataStatusColors.yellow.rgb]),
   totalAmount : PropTypes.number,
   currentAmount : PropTypes.number,
   label : PropTypes.string

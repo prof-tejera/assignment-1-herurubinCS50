@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { colors } from "../color-data/colors";
+
 
 export class Readout extends React.Component{
 
