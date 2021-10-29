@@ -1,0 +1,24 @@
+.button{
+    font-weight: 300;
+    padding: 2rem 2rem 0.1rem 0.1rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    color: #303f5f;
+    font-family: ObjectSans;
+    font-weight: 600;
+    border: 1px solid #020D24;
+    position: relative;
+}
+
+.button .icon{
+    position: absolute;
+    top: -20px;
+    right: 5px;
+}
+
+.button.action{
+     color: white;
+    background-color: #303f5f;
+    border-radius: 0.25rem;
+    border: 1px solid #020A28;
+}

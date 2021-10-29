@@ -1,0 +1,13 @@
+
+@font-face {
+    font-family: ObjectSans;
+    src: local('fonts/ObjectSans-Regular.WOFF'), url('fonts/ObjectSans-Regular.WOFF');
+    font-weight : 300;
+}
+
+
+@font-face {
+    font-family: ObjectSans;
+    src: local('fonts/ObjectSans-Heavy.WOFF'), url('fonts/ObjectSans-Heavy.WOFF');
+    font-weight : 600;
+}

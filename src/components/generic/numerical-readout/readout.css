@@ -1,0 +1,13 @@
+.readout{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-family: ObjectSans;
+    padding: 1rem;
+
+    color: #303f5f;
+}
+

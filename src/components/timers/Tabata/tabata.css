@@ -1,0 +1,13 @@
+.interval{
+    display: flex;
+}
+
+.intervals-display{
+    display: flex;
+}
+
+.intervals-display .interval{
+    flex-grow: 1;
+    flex-grow: 1;
+    margin-right: 0.5rem;
+}

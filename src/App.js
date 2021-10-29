@@ -2,6 +2,16 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import styled from "styled-components";
 
+import './App.css'
+
+import './components/generic/bar-fill/bar-fill.css';
+import './components/generic/button/button.css';
+import './components/generic/numerical-readout/readout.css';
+import './components/timers/Stopwatch/stop-watch.css';
+import './components/timers/Countdown/countdown.css';
+import './components/timers/XY/xy.css';
+import './components/timers/Tabata/tabata.css'
+
 import DocumentationView from "./views/DocumentationView";
 import TimersView from "./views/TimersView";
 
